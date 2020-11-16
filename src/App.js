@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BackgroundImg from "/Users/limseongkyu/memories/src/Image/background2.jpeg";
+import BackgroundImg from "/Users/limseongkyu/memories/src/Image/background3.jpeg";
 
 class App extends React.Component {
   render() {
