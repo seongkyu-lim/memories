@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import BackgroundImg from "/Users/limseongkyu/memories/src/Image/background3.jpeg";
+import BackgroundImg from "/Users/limseongkyu/memories/src/Image/background4.jpeg";
 import Book1Img from "/Users/limseongkyu/memories/src/Image/Book.jpeg";
 
 class App extends React.Component {
@@ -25,8 +25,8 @@ const Container = styled.div`
 `;
 
 const Book1Image = styled.img`
-  width: 300px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 `;
 
 export default App;
