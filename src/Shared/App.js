@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Fishbowl, Ricecooker, Book1 } from "./Pages";
+import { Route, NavLink } from "react-router-dom";
+import { Fishbowl, Ricecooker, Book1 } from "../Pages";
 
 import BackgroundImg from "/Users/limseongkyu/memories/src/Image/background4.jpeg";
 import Book1Img from "/Users/limseongkyu/memories/src/Image/Book.jpeg";
@@ -11,16 +11,20 @@ import RicecookerImg from "/Users/limseongkyu/memories/src/Image/ricecooker.jpeg
 class App extends React.Component {
   render() {
     return (
-      <Router>
-        <Container>
-          <NavLink exact to="/Book1" activeStyle={activeStyle}>
-            <Book1Image src={Book1Img} />
-          </NavLink>
+      <Container>
+        <NavLink exact to="/Book1">
+          <Book1Image src={Book1Img} />
+        </NavLink>
+        <NavLink exact to="/Fishbowl">
           <Fishbowl1 src={FishbowlImg} />
+        </NavLink>
+        <NavLink exact to="/Ricecooker">
           <Ricecooker1 src={RicecookerImg} />
-          <Route path="/Book1" component={Book1} />
-        </Container>
-      </Router>
+        </NavLink>
+        <Route path="/Book1" component={Book1} />
+        <Route path="/Fishbowl" component={Fishbowl} />
+        <Route path="/Ricecooker" component={Ricecooker} />
+      </Container>
     );
   }
 }
