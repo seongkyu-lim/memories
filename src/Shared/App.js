@@ -10,15 +10,19 @@ import RicecookerImg from "/Users/limseongkyu/memories/src/Image/ricecooker.jpeg
 
 class App extends React.Component {
   render() {
+    const activeStyle = {
+      background: "gray",
+      fontSize: "2rem",
+    };
     return (
       <Container>
-        <NavLink exact to="/Book1">
+        <NavLink exact to="/Book1" activeStyle={activeStyle}>
           <Book1Image src={Book1Img} />
         </NavLink>
-        <NavLink exact to="/Fishbowl">
+        <NavLink exact to="/Fishbowl" activeStyle={activeStyle}>
           <Fishbowl1 src={FishbowlImg} />
         </NavLink>
-        <NavLink exact to="/Ricecooker">
+        <NavLink exact to="/Ricecooker" activeStyle={activeStyle}>
           <Ricecooker1 src={RicecookerImg} />
         </NavLink>
         <Route path="/Book1" component={Book1} />
