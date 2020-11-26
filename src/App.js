@@ -1,19 +1,26 @@
 import React from "react";
 import styled from "styled-components";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Fishbowl, Ricecooker, Book1 } from "./Pages";
 
 import BackgroundImg from "/Users/limseongkyu/memories/src/Image/background4.jpeg";
 import Book1Img from "/Users/limseongkyu/memories/src/Image/Book.jpeg";
-import Fishbowl from "/Users/limseongkyu/memories/src/Image/fishbowl.jpeg";
-import Ricecooker from "/Users/limseongkyu/memories/src/Image/ricecooker.jpeg";
+import FishbowlImg from "/Users/limseongkyu/memories/src/Image/fishbowl.jpeg";
+import RicecookerImg from "/Users/limseongkyu/memories/src/Image/ricecooker.jpeg";
 
 class App extends React.Component {
   render() {
     return (
-      <Container>
-        <Book1Image src={Book1Img} />
-        <Fishbowl1 src={Fishbowl} />
-        <Ricecooker1 src={Ricecooker} />
-      </Container>
+      <Router>
+        <Container>
+          <Link to="/Book1">
+            <Book1Image src={Book1Img} />
+          </Link>
+          <Fishbowl1 src={FishbowlImg} />
+          <Ricecooker1 src={RicecookerImg} />
+          <Route path="/Book1" component={Book1} />
+        </Container>
+      </Router>
     );
   }
 }
