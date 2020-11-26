@@ -13,9 +13,9 @@ class App extends React.Component {
     return (
       <Router>
         <Container>
-          <Link to="/Book1">
+          <NavLink exact to="/Book1" activeStyle={activeStyle}>
             <Book1Image src={Book1Img} />
-          </Link>
+          </NavLink>
           <Fishbowl1 src={FishbowlImg} />
           <Ricecooker1 src={RicecookerImg} />
           <Route path="/Book1" component={Book1} />
