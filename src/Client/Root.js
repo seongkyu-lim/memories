@@ -1,6 +1,7 @@
+/*
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import App from "../Shared/App";
+import App from "../Shared/Routes";
 
 const Root = () => (
   <BrowserRouter>
@@ -9,3 +10,4 @@ const Root = () => (
 );
 
 export default Root;
+*/
