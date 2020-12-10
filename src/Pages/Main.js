@@ -16,13 +16,13 @@ class Main extends React.Component {
     };
     return (
       <Container>
-        <NavLink exact to="/Book1" activeStyle={activeStyle}>
+        <NavLink to="/Book1" activeStyle={activeStyle}>
           <Book1Image src={Book1Img} />
         </NavLink>
-        <NavLink exact to="/Fishbowl" activeStyle={activeStyle}>
+        <NavLink to="/Fishbowl" activeStyle={activeStyle}>
           <Fishbowl1 src={FishbowlImg} />
         </NavLink>
-        <NavLink exact to="/Ricecooker" activeStyle={activeStyle}>
+        <NavLink to="/Ricecooker" activeStyle={activeStyle}>
           <Ricecooker1 src={RicecookerImg} />
         </NavLink>
       </Container>

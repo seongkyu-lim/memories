@@ -10,15 +10,15 @@ import Fishbowl from '../Pages/Fishbowl';
 import Ricecooker from '../Pages/Ricecooker';
 import Main from '../Pages/Main';
 
-class App extends React.Component {
+class Routes extends React.Component {
   render() {
     return (
       <Router>
         <Switch>
-          <Route path="/" component={Main} />
-          <Route path="/Book1" component={Book1} />
-          <Route path="/Fishbowl" component={Fishbowl} />
-          <Route path="/Ricecooker" component={Ricecooker} />
+          <Route exact path="/" component={Main} />
+          <Route exact path="/Book1" component={Book1} />
+          <Route exact path="/Fishbowl" component={Fishbowl} />
+          <Route exact path="/Ricecooker" component={Ricecooker} />
         </Switch>
       </Router>
     )
@@ -27,4 +27,4 @@ class App extends React.Component {
    
 
    
-export default App;
+export default Routes;
