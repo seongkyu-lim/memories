@@ -43,17 +43,22 @@ const Container = styled.div`
   background-size: cover;
 `;
 const Ricecooker1 = styled.img`
-  padding: 1% 20% 0 0;
+  position: relative;
+  top: 230px;
+  left: 600px;
   margin: auto;
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   transition: all 0.3s ease-in-out;
   &:hover {
     transform: scale(1.2);
   }
 `;
 const Fishbowl1 = styled.img`
+  position: relative;
+  top: 250px;
+  left: 400px;
   margin: auto;
   display: block;
   width: 100px;
@@ -64,7 +69,9 @@ const Fishbowl1 = styled.img`
   }
 `;
 const Book1Image = styled.img`
-  padding: 1% 70% 15% 0;
+  position: fixed;
+  top: 20px;
+  left: 100px;
   margin: auto;
   display: block;
   width: 100px;
