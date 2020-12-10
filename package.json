@@ -40,7 +40,7 @@
       "last 1 safari version"
     ]
   },
-  "hompage":"https://seongkyu-lim.github.io/memories/",
+  "homepage":"https://seongkyu-lim.github.io/memories/",
   "devDependencies": {
     "cross-env": "7.0.2"
   }
