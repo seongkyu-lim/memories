@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "body-parser": "1.19.0",
+    "express": "4.17.1",
     "gh-pages": "3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -19,8 +21,8 @@
     "build": "cross-env NODE_PATH=src react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy":"react-scripts build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,7 +42,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage":"https://seongkyu-lim.github.io/memories/",
+  "homepage": "https://seongkyu-lim.github.io/memories/",
   "devDependencies": {
     "cross-env": "7.0.2"
   }
